@@ -1,11 +1,19 @@
 <div id="content-container">
     <app-management-title text="Taskuri deschise" class="mb-3"></app-management-title>
-    <div id="button-container" class="d-flex mb-3">
-        <app-management-button text="Adauga Task" class="p-2"></app-management-button>
-        <app-management-button text="Adauga Membru" class="p-2"></app-management-button>
-        <app-management-button text="Filtreaza" class="ms-auto p-2"></app-management-button>
+    <div id="button-container" class="d-flex mt-4">
+        <app-management-button text="Adauga Task" class="pe-2"></app-management-button>
+        <app-management-button text="Adauga Membru" class="pe-2"></app-management-button>
+        <app-management-button text="Filtreaza" class="ms-auto ps-2"></app-management-button>
     </div>
-    <div id="card-container">
-        
+    <div id="card-container" class="row mt-3">
+        <app-management-homepage-card *ngFor="let task of this.tasks"
+            class="col-12 col-md-4"
+            id={{task.id}}
+            title={{task.title}}
+            description={{task.description}}
+            priority={{task.priority}}
+            isFinished={{task.isFinished}}
+            >
+        </app-management-homepage-card>
     </div>
 </div>

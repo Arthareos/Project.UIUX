@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import jsonData from '../../../assets/placeholder-tasks.json'
 
 @Component({
   selector: 'app-management-homepage',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./management-homepage.component.scss']
 })
 export class ManagementHomepageComponent {
+    
+    public tasks = jsonData;
 
+    constructor() {
+        console.log(jsonData);
+    }
 }

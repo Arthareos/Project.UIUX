@@ -1,0 +1,24 @@
+h5 {
+    font-family: management-text;
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+h6 {
+    font-family: management-text;
+
+    &.overflow {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+
+p {
+    font-family: management-text;
+}
