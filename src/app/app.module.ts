@@ -9,6 +9,8 @@ import { ManagementHomepageComponent } from './components/management-homepage/ma
 import { ManagementNavbarComponent } from './components/shared/management-navbar/management-navbar.component';
 import { ManagementTitleComponent } from './components/typography/management-title/management-title.component';
 import { ManagementTextComponent } from './components/typography/management-text/management-text.component';
+import { ManagementButtonComponent } from './components/shared/management-button/management-button.component';
+import { ManagementHomepageCardComponent } from './components/management-homepage/management-homepage-card/management-homepage-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ManagementTextComponent } from './components/typography/management-text
     ManagementHomepageComponent,
     ManagementNavbarComponent,
     ManagementTitleComponent,
-    ManagementTextComponent
+    ManagementTextComponent,
+    ManagementButtonComponent,
+    ManagementHomepageCardComponent
   ],
   imports: [
     BrowserModule,
