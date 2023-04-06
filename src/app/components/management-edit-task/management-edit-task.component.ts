@@ -9,7 +9,7 @@ import jsonData from '../../../assets/placeholder-tasks.json'
   styleUrls: ['./management-edit-task.component.scss']
 })
 export class ManagementEditTaskComponent implements OnInit {
-    
+
     public task: any;
 
     constructor(

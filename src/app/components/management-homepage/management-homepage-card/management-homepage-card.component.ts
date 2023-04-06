@@ -15,8 +15,8 @@ export class ManagementHomepageCardComponent {
 
     constructor(private _router: Router) {}
 
-    navigate(id: any) {
+    /*navigate(id: any) {
         console.log(`route to ${id} triggered`);
         this._router.navigateByUrl(`/${id}`);
-    }
+    }*/
 }

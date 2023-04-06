@@ -12,6 +12,7 @@ import { ManagementTextComponent } from './components/typography/management-text
 import { ManagementButtonComponent } from './components/shared/management-button/management-button.component';
 import { ManagementHomepageCardComponent } from './components/management-homepage/management-homepage-card/management-homepage-card.component';
 import { ManagementEditTaskComponent } from './components/management-edit-task/management-edit-task.component';
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ManagementEditTaskComponent } from './components/management-edit-task/m
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

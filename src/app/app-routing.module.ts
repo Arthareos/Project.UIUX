@@ -4,7 +4,7 @@ import { ManagementHomepageComponent } from './components/management-homepage/ma
 import { ManagementEditTaskComponent } from './components/management-edit-task/management-edit-task.component';
 
 const routes: Routes = [
-    { path: '', component: ManagementHomepageComponent },
+    { path: '', component: ManagementHomepageComponent, pathMatch: 'full' },
     { path: 'edit/:id', component: ManagementEditTaskComponent },
 
     // otherwise redirect to 404
@@ -12,7 +12,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
